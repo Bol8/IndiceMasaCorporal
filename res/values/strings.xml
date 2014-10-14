@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IndiceMasaCorporal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="altura">Escribe tu ALTURA actual:</string>
+    <string name="peso">Escribe tu Peso actual:</string>
+    <string name="Imc">Índice de masa corporal:</string>
+    <string name="Resultado">Atendiendo a su IMC,usted tiene:</string>
+    <string name="ok">OK</string>
+    <string name="error_division">No se puede dividir entre 0</string>
+    <string name="error_campos_vacios">No se puede dejar los campos vacios</string>
+    <string name="error_fuera_rango">Peso o altura fuera de rango\n
+        							Peso:10-300\nAltura:100-300</string>
+
+</resources>

@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutGeneral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/LayoutAltura"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10px" >
+
+        <TextView
+            android:id="@+id/textAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editAltura"
+            android:layout_alignBottom="@+id/editAltura"
+            android:layout_alignParentLeft="true"
+            android:text="@string/altura" />
+
+        <EditText
+            android:id="@+id/editAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textAltura"
+            android:ems="10"
+            android:hint="cms"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editPeso"
+            android:layout_alignBottom="@+id/editPeso"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textAltura"
+            android:text="@string/peso" />
+
+        <EditText
+            android:id="@+id/editPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editAltura"
+            android:layout_below="@+id/editAltura"
+            android:ems="10"
+            android:hint="Kg"
+            android:inputType="numberDecimal" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:text="@string/Resultado" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editPeso"
+            android:layout_marginTop="14dp"
+            android:text="@string/Imc" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@+id/editPeso"
+            android:layout_alignRight="@+id/editPeso"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_toRightOf="@+id/textView3"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnCalcula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:text="Calcular IMC" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
