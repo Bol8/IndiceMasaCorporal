@@ -15,6 +15,21 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import excepciones.*;
+/**
+ * 
+ * @author Oscar
+ * @startuml
+ * autonumber
+ * MainActivity -[#red]> IndiceDeMasaCorporal : Envía peso y altura
+ * note left:Si no hay NumberFormatException
+ * MainActivity <[#0000FF]-- IndiceDeMasaCorporal : :Devuelve objeto Imc
+ * note right:Si los parámetros son correctos
+ * MainActivity <[#0000FF]-- IndiceDeMasaCorporal : :Devuelve Excepciones
+ * note right:Si los parámetros son incorrectos
+ * @enduml
+ *  
+ *
+ */
 
 public class MainActivity extends ActionBarActivity {
 	EditText edAltura, edPeso;
